@@ -37,7 +37,7 @@ feat(problemA): A plus B
 ## 担当
 | 問題名 | 難易度 | 問題文・データセット | validator | 備考,TODO |
 |---------------------------|--------------|----------------------|-----------|------|
-| A: [AtimesB](./A-A-mul-B/statement.md) | 5-5 | tomato(Answerbook) | - | |
+| A: [AtimesB](./A-A-mul-B/statement.md) | 5-5 | tomato(Answerbook) | - | 昨年と同じ |
 <!-- | B: [ジョウモン](./B-joumon/statement.md) | 10-100 | suzu | shiro |  |
 | C: [ロボットシミュレーション](./C-RobotSimu/statement.md) | 10-100 | reiya | suzu |  |
 | D: [情理バー(K>=2)](./D-jori-bar/statement.md) | 20-200 | kumachan | tsubasa |  |
