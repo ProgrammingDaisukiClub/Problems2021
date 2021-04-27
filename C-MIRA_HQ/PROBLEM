@@ -9,7 +9,7 @@ problem(
   wiki_name="-", # for wikify plugin
   assignees=['shiro'], # for wikify plugin
   need_custom_judge=False, # for wikify plugin
-  #reference_solution='???',
+  reference_solution='C-shiro-AC',
   )
 
 atcoder_config(
