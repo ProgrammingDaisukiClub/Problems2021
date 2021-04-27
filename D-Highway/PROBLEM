@@ -1,0 +1,17 @@
+# -*- coding: utf-8; mode: python -*-
+
+pid='D'
+
+problem(
+  time_limit=10.0,
+  id=pid,
+  title=pid + ": 車の集計",
+  wiki_name="-", # for wikify plugin
+  assignees=['kumachan'], # for wikify plugin
+  need_custom_judge=False, # for wikify plugin
+  reference_solution='C-kumachan-AC',
+  )
+
+atcoder_config(
+  task_id=None # None means a spare
+)
