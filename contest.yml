@@ -1,0 +1,14 @@
+contest_name: Waseda Orientation Programming Contest 2021
+problems:
+  - dir_name: A-A-mul-B
+    data_sets:
+      - label: Small
+        score: 5
+      - label: Large
+        score: 5
+  - dir_name: E-Paper-Reading
+    data_sets:
+      - label: Small
+        score: 5
+      - label: Large
+        score: 5
