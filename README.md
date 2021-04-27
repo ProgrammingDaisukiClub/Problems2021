@@ -34,16 +34,22 @@ feat(problem[A-J]): 問題名
 feat(problemA): A plus B
 ```
 
+#### 注意事項
+テストケース数は定数で作成
+問題文は全てですます調にする
+テストケースは1MBにおさめる
+TLは10秒に設定
+
 ## 担当
-| 問題名 | 難易度 | 問題文・データセット | validator | 備考,TODO |
+| 問題名 | 難易度 | 原案・問題文 | generator | validator | 備考,TODO |
 |---------------------------|--------------|----------------------|-----------|------|
 | A: [AtimesB](./A-A-mul-B/statement.md) | 5-5 | tomato(Answerbook) | - | 昨年と同じ |
-<!-- | B: [ジョウモン](./B-joumon/statement.md) | 10-100 | suzu | shiro |  |
-| C: [ロボットシミュレーション](./C-RobotSimu/statement.md) | 10-100 | reiya | suzu |  |
-| D: [情理バー(K>=2)](./D-jori-bar/statement.md) | 20-200 | kumachan | tsubasa |  |
-| E: [人助け](./E-Helping/statement.md) | 20-200 | tsubasa | kumachan |  |
-| F: [JANKEN](./F-JANKEN/statement.md) | 30-300 | tsubasa | reiya |  |
-| G: [高度合成数](./G-KoudoGouseisu/statement.md) | 40-500 | yamad | tsubasa |  |
-| H: [履修登録](./H-risyuuTouroku/statement.md) | 50-700 | shiro | yamad | - |
-| I: [タタラ製鉄所](./I-TATARAseitetujyo/statement.md) | 50-800 | shiro | tsubasa | - |
-| J: [トレジャーハンター](./J-Okashi/statement.md) | 50-700-500 | yamad | tsubasa | - | -->
+| B: Max mod M |  | Hyado | tomato | tsubasa | 問題文にヒント欄を用意し、%演算を明記する。 |
+| C: MIRA HQ |  | shiro | shiro | bayashiko | 最後に総和を出力する問題に変更 |
+| D: 車の集計 |  | kumachan | kumachan | lgeu | 入力は数字で |
+| E: 論文サーベイ |  | tsubasa | tsubasa | suzu | 2本読む設定に |
+| F: mohumohu |  | suzu | suzu | tsubasa | (mohu)+のみを許す設定 |
+| G: うまぴょい |  | lgeu | lgeu | kumachan |  |
+| H: さいごのかいろう |  | bayashiko | bayashiko | shiro |  |
+| I: The Best Base |  | Hyado | Hyado | tomato | グリッドにする |
+<!-- | J: [トレジャーハンター](./J-Okashi/statement.md) | 50-700-500 | yamad | tsubasa | - | -->
