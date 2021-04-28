@@ -1,0 +1,19 @@
+# -*- coding: utf-8; mode: python -*-
+
+pid='H'
+
+problem(
+  time_limit=10.0,
+  id=pid,
+  title=pid + ": さいごのかいろう",
+  wiki_name="-", # for wikify plugin
+  assignees=['bayashiko'], # for wikify plugin
+  need_custom_judge=False, # for wikify plugin
+  reference_solution='C-bayashiko-AC',
+  )
+
+atcoder_config(
+  task_id=None # None means a spare
+)
+
+
