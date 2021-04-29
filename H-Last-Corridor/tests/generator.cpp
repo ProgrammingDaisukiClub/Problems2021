@@ -14,7 +14,10 @@ void small_case(){
         int H=rnd.next(1,100);
         int X=rnd.next(1,5);
         int A[N];
-        rep(i,N) A[i]=rnd.next(1,100);
+        rep(i,N){
+            if(T%2) A[i]=rnd.next(1,100);
+            else A[i]=rnd.next(1,20);
+        }
         int D[X];
         D[0]=1;
         for(int i=1;i<X;i++) D[i]=rnd.next(1,10);
@@ -37,10 +40,16 @@ void large_case(){
         int H=rnd.next(1,MAX_H);
         int X=rnd.next(1,MAX_X);
         int A[N];
-        rep(i,N) A[i]=rnd.next(1,MAX_A);
+        rep(i,N){
+            if(T%3!=0) A[i]=rnd.next(1,10000);
+            else A[i]=rnd.next(1,MAX_A);
+        }
         int D[X+1];
         D[0]=1;
-        for(int i=1;i<X;i++) D[i]=rnd.next(1,MAX_D);
+        for(int i=1;i<X;i++){
+            if(T%3!=0) D[i]=rnd.next(20,MAX_D);
+            else D[i]=rnd.next(1,MAX_D);
+        }
         sort(D,D+X);
         D[X]=-1;
         long long damage=0;
@@ -56,7 +65,7 @@ void large_case(){
             atk[plc]=A[plc]/D[cnt[plc]];
         }
 
-        if(damage+1<=MAX_H && damage>=1) H=rnd.next(0,1)%2?damage:damage+1;
+        if(damage+1<=MAX_H && damage>=1) H=rnd.next(0,2)%3==0?damage:damage+1;
 
         of << N << " " << H << " " << X << endl;
         rep(i,N-1) of << A[i] << " ";
