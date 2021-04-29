@@ -39,6 +39,7 @@ feat(problemA): A plus B
 問題文は全てですます調にする  
 テストケースは1MBにおさめる  
 TLは10秒に設定  
+**問題文は制約含め日本語で(追加事項)**
 
 ## 担当
 | 問題名 | 難易度 | 原案・問題文 | generator | validator | 備考,TODO |
