@@ -3,7 +3,7 @@
 pid='E'
 
 problem(
-  time_limit=1.0,
+  time_limit=10,
   id=pid,
   title=pid + ": Paper Reading",
   wiki_name="-", # for wikify plugin
