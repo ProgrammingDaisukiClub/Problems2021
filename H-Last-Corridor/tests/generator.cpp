@@ -1,6 +1,6 @@
-#include"testlib.h"
-#include"constraints.h"
-#include<bits/stdc++.h>
+#include "testlib.h"
+#include "constraints.h"
+
 using namespace std;
 #define rep(i,n) for(int (i)=0;(i)<(n);(i)++)
 
