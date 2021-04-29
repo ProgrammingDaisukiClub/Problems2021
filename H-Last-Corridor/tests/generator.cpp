@@ -13,12 +13,12 @@ void small_case(){
         int N=rnd.next(1,5);
         int H=rnd.next(1,100);
         int X=rnd.next(1,5);
-        int A[N];
+        int A[2050];
         rep(i,N){
             if(T%2) A[i]=rnd.next(1,100);
             else A[i]=rnd.next(1,20);
         }
-        int D[X];
+        int D[2050];
         D[0]=1;
         for(int i=1;i<X;i++) D[i]=rnd.next(1,10);
         sort(D,D+X);
@@ -39,12 +39,12 @@ void large_case(){
         int N=rnd.next(1,MAX_N);
         int H=rnd.next(1,MAX_H);
         int X=rnd.next(1,MAX_X);
-        int A[N];
+        int A[2050];
         rep(i,N){
             if(T%3!=0) A[i]=rnd.next(1,10000);
             else A[i]=rnd.next(1,MAX_A);
         }
-        int D[X+1];
+        int D[2050];
         D[0]=1;
         for(int i=1;i<X;i++){
             if(T%3!=0) D[i]=rnd.next(20,MAX_D);
@@ -53,7 +53,7 @@ void large_case(){
         sort(D,D+X);
         D[X]=-1;
         long long damage=0;
-        int atk[N],cnt[N];
+        int atk[2050],cnt[2050];
         rep(i,N) atk[i]=A[i],cnt[i]=0;
         rep(i,X){
             int maxi=0,plc=0;
