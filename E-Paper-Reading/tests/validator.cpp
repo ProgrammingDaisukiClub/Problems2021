@@ -10,7 +10,7 @@ void check() {
   inf.readEoln();
   for (int i = 0; i < N; ++i) {
     if (i != 0) inf.readSpace();
-    inf.readInt(MIN_T, MAX_T, "T_i");
+    inf.readInt(MIN_A, MAX_A, "T_i");
   }
   inf.readEoln();
 }

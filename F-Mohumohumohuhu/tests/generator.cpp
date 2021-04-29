@@ -11,15 +11,15 @@ void generate(const string &file_name, int num_case, int max_size) {
 
   for (int i=0; i<num_case; i++) {
   	bool ans = rnd.next(0,1);
-  	int N = rnd.next(2, max_size) / 2 * 2;
-  	
+  	int N;
   	if(ans){
-  		N = N / 4 * 4;
+  		N = rnd.next(4, max_size) / 4 * 4;
   		ofs << N << endl;
   		for(int j = 0; j < N / 4; ++j){
   			ofs << "mohu";
   		}
   	}else{
+      N = rnd.next(2, max_size) / 2 * 2;
   		ofs << N << endl;
   		for(int j = 0; j < N / 2; ++j){
   			ofs << (rnd.next(0,1)?"mo":"hu");
