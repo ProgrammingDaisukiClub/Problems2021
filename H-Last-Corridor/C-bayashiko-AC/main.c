@@ -4,7 +4,7 @@
 void solve(){
     int N,H,T;
     scanf("%d%d%d",&N,&H,&T);
-    int A[N],D[T+1];
+    int A[2050],D[2050];
     rep(i,N) scanf("%d",&A[i]);
     rep(i,T) scanf("%d",&D[i]);
     D[T]=-1;
