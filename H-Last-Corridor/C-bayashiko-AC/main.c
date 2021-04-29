@@ -6,7 +6,7 @@ void solve(){
     scanf("%d%d%d",&N,&H,&T);
     int A[N],D[T+1];
     rep(i,N) scanf("%d",&A[i]);
-    rep(i,N) scanf("%d",&D[i]);
+    rep(i,T) scanf("%d",&D[i]);
     D[T]=-1;
     long long damage=0;
     int atk[N],cnt[N];
