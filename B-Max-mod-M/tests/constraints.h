@@ -1,4 +1,4 @@
-#define MAX_T 1000
+#define MAX_T 100
 #define MIN_T 10
 #define SAMPLE_T 3
 #define MAX_AB 100
