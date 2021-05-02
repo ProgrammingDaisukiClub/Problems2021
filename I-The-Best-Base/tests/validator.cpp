@@ -10,6 +10,10 @@
 
 using namespace std;
 
+// THIS IS VALIDATOR FOR GRAPH
+// IT WILL BE FIXED FOR GRID, WHEN CONSTRAINTS IS FOUND
+
+/*
 void visit_all_node(
   const vector<vector<int>>& graph,
   const int nowIndex,
@@ -78,3 +82,4 @@ int main(int argc, char* argv[]) {
   inf.readEof();
   return 0;
 }
+*/
