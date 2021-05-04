@@ -1,74 +1,97 @@
 #include <fstream>
 #include <string>
-#include <set>
 #include <utility>
 #include <vector>
-#include <algorithm>
+#include <queue>
 
 #include "constraints.h"
 #include "testlib.h"
 
 using namespace std;
+using Grid = vector<vector<bool>>;
+using Pos = pair<int,int>;
 
-// THIS IS VALIDATOR FOR GRAPH
-// IT WILL BE FIXED FOR GRID, WHEN CONSTRAINTS IS FOUND
+const int dh[4] = {-1,0,1,0};
+const int dw[4] = {0,-1,0,1};
 
-/*
-void visit_all_node(
-  const vector<vector<int>>& graph,
-  const int nowIndex,
-  const int parentIndex,
-  vector<bool>& visited
-) {
-  visited[nowIndex] = true;
-  for (const int nextIndex: graph[nowIndex]) {
-    if (nextIndex!=parentIndex && !visited[nextIndex]) {
-      visit_all_node(graph, nextIndex, nowIndex, visited);
+Pos get_some_dot_position(const Grid& isRoad) {
+  const int N = isRoad.size();
+  for (int h=0; h<N; h++) {
+    for (int w=0; w<N; w++) {
+      if (isRoad[h][w]) {
+        return make_pair(h, w);
+      }
     }
   }
+  return make_pair(-1, -1);
 }
 
-bool is_graph_connected(const vector<vector<int>>& graph) {
-  const int N = graph.size();
-  vector<bool> visited(N, false);
-  visit_all_node(graph, 0, -1, visited);
-  return all_of(visited.begin(), visited.end(), [](bool flag) { return flag; });
+bool isInnerGrid(const Pos& pos, const int N) {
+  return 0<=pos.first && pos.first<N && 0<=pos.second && pos.second<N;
 }
 
-void check() {
-  int N = inf.readInt(MIN_N, MAX_N, "N");
-  inf.readSpace();
-  int M = inf.readInt(1, 2*N, "M");
-  inf.readEoln();
+bool isRoadConnected(const Grid& isRoad, const Pos& initPos) {
+  const int N = isRoad.size();
+  Grid went(N, vector<bool>(N, false));
+  queue<Pos> que;
+  went[initPos.first][initPos.second] = true;
+  que.push(initPos);
   
-  set<pair<int,int>> setAB;
-  vector<vector<int>> graph(N);
-  for (int i=0; i<M; i++) {
-    int A = inf.readInt(1, N-1, "A");
-    inf.readSpace();
-    int B = inf.readInt(A+1, N, "B");
-    inf.readEoln();
-    
-    setAB.insert({ A, B });
-    graph[A-1].push_back(B-1);
-    graph[B-1].push_back(A-1);
+  while (!que.empty()) {
+    Pos now = que.front(); que.pop();
+    for (int dir=0; dir<4; dir++) {
+      const int nh = now.first+dh[dir];
+      const int nw = now.second+dw[dir];
+      if (!isInnerGrid(make_pair(nh, nw), N)) continue;
+      if (!isRoad[nh][nw]) continue;
+      if (went[nh][nw]) continue;
+      went[nh][nw] = true;
+      que.push(make_pair(nh, nw));
+    }
   }
-  ensuref(setAB.size()==M, "i!=j => (A_i,B_i) != (A_j,B_j)");
-  ensuref(is_graph_connected(graph), "the provided graph must be connected");
- 
-  int Q = inf.readInt(MIN_Q, MAX_Q, "Q");
+  
+  for (int h=0; h<N; h++) {
+    for (int w=0; w<N; w++) {
+      if (isRoad[h][w] && !went[h][w]) {
+        return false;
+      }
+    }
+  }
+  return true;
+}
+
+void check(bool isSmallTestSet) {
+  const int MIN_N = isSmallTestSet ? SMALL_MIN_N : LARGE_MIN_N;
+  const int MAX_N = isSmallTestSet ? SMALL_MAX_N : LARGE_MAX_N;
+  const int MIN_Q = isSmallTestSet ? SMALL_MIN_Q : LARGE_MIN_Q;
+  const int MAX_Q = isSmallTestSet ? SMALL_MAX_Q : LARGE_MAX_Q;
+  
+  const int N = inf.readInt(MIN_N, MAX_N, "N");
   inf.readEoln();
   
-  set<int> setD;
+  Grid isRoad(N);
+  for (int i=0; i<N; i++) {
+    const string A_i = inf.readString(
+      format("[\.#]{%d}", N),
+      format("A[%d]", i)
+    );
+    for (int j=0; j<N; j++) {
+      isRoad[i].push_back(A_i[j]=='.');
+    }
+  }
+  
+  const Pos dotPos = get_some_dot_position(isRoad);
+  inf.ensuref(0<=dotPos.first, "some grid must be . (dot)");
+  inf.ensuref(isRoadConnected(isRoad, dotPos), "road must be connected");
+  
+  const int Q = inf.readInt(MIN_Q, min(MAX_Q, N*N), "Q");
+  inf.readEoln();
+  
   for (int i=0; i<Q; i++) {
-    int D = inf.readInt(1, N);
-    setD.insert(D);
-    if (i != Q-1) {
-      inf.readSpace();
-    }
+    inf.readInt(1, N, "r");
+    inf.readInt(1, N, "c");
+    inf.readEoln();
   }
-  ensuref(setD.size() == Q, "the number of D must be unique");
-  inf.readEoln();
 }
 
 int main(int argc, char* argv[]) {
@@ -76,10 +99,11 @@ int main(int argc, char* argv[]) {
   int T = inf.readInt(1, LARGE_T, "T");
   ensuref((T==SMALL_T || T==LARGE_T), "T");
   inf.readEoln();
+  
+  bool isSmallTestSet = T==SMALL_T;
   for (int i=0; i<T; ++i) {
-    check();
+    check(isSmallTestSet);
   }
   inf.readEof();
   return 0;
 }
-*/
