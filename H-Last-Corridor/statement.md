@@ -44,8 +44,9 @@
 
 ```
 $N H X$
-$A_1 A_2 .. A_N$
-$D_1 D_2 .. D_X$
+$A_1 A_2 \ldots A_N$
+$D_1 D_2 \ldots D_X$
+
 ```
 
 # 出力
