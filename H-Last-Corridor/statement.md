@@ -23,7 +23,8 @@
 * $1\leq H\leq 100$
 * $1\leq X\leq 5$
 * $1\leq A_i\leq 100$
-* $1=D_1\leq D_2\leq ...\leq D_X \leq10$
+* $1=D_1\leq D_2\leq \ldots\leq D_X \leq10$
+
 ## Large
 * $T=50$
 * $1\leq N\leq 2000$
