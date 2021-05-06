@@ -6,7 +6,10 @@ def main():
     for _ in range(T):
         N = int(input())
         L = list(map(int, input().split()))
-        print(sum(L))
+        ans = 0
+        for i in L:
+            ans += i
+            print(ans)
 
 
 if __name__ == '__main__':
