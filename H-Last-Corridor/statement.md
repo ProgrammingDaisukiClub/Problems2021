@@ -30,7 +30,8 @@
 * $1\leq H\leq 10^9$
 * $1\leq X\leq 2000$
 * $1\leq A_i\leq 10^9$
-* $1=D_1\leq D_2\leq ...\leq D_X \leq10^9$
+* $1=D_1\leq D_2\leq \ldots\leq D_X \leq10^9$
+
 
 # 入力
 1 つの入力ファイルは複数のテストケースからなります。
