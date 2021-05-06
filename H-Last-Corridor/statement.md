@@ -70,7 +70,7 @@ No
 Yes
 ```
  $1$ 個目のテストケースでは、例えば $(B_1,B_2,B_3)=(2,1,2)$ などが条件を満たします。実際、  
-* $\displaystyle\sum_{i=1}^{3}B_i=5\leq 5$
+* $\displaystyle\sum_{i=1}^{3}B_i=2+1+2=5\leq 5$
 * $\displaystyle\sum_{i=1}^{3}\sum_{j=1}^{B_i}\lfloor A_i/D_j \rfloor=\lfloor1/1\rfloor+\lfloor1/2\rfloor+\lfloor3/1\rfloor+\lfloor5/1\rfloor+\lfloor5/2\rfloor=1+0+3+5+2=11\geq 10$  
   
 であり、確かに $2$ つの条件を共に満たしていることが分かります。よって、`Yes`と出力するのが正解です。  
