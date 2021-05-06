@@ -104,7 +104,7 @@ void random(string fname, int cases, int minn, int maxn, int minq, int maxq) {
     of << q << endl;
     set<int> st;
     while (st.size() < q) st.insert(rnd.next(0, m - 1));
-    for (auto p : st) of << v[p].first << " " << v[p].second << endl;
+    for (auto p : st) of << v[p].first + 1 << " " << v[p].second + 1 << endl;
   }
   of.close();
 }
