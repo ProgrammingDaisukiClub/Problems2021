@@ -48,10 +48,10 @@ TLは10秒に設定
 | A: [AtimesB](./A-A-mul-B/statement.md) | 5-5 | tomato(Answerbook) | - | 昨年と同じ |
 | B: Max mod M |  | Hyado | tomato | tsubasa | 問題文にヒント欄を用意し、%演算を明記する。 |
 | C: MIRA HQ |  | shiro | shiro | bayashiko | 最後に総和を出力する問題に変更 |
-| D: 車の集計 |  | kumachan | kumachan | lgeu | 入力は数字で |
-| E: 論文サーベイ |  | tsubasa | tsubasa | suzu | 2本読む設定に |
-| F: mohumohu |  | suzu | suzu | tsubasa | (mohu)+のみを許す設定 |
-| G: うまぴょい |  | lgeu | lgeu | kumachan |  |
-| H: さいごのかいろう |  | bayashiko | bayashiko | shiro |  |
+| D: [車の集計](./D-Highway/statement.md) |  | kumachan | kumachan | lgeu | 入力は数字で |
+| E: [論文サーベイ](./E-Paper-Reading/statement.md) |  | tsubasa | tsubasa | suzu | 2本読む設定に |
+| F: [mohumohu](./F-Mohumohumohuhu/statement.md) |  | suzu | suzu | tsubasa | (mohu)+のみを許す設定 |
+| G: [うまぴょい](./G-Umapyoi/statement.md) |  | lgeu | lgeu | kumachan |  |
+| H: [さいごのかいろう](./H-Last-Corridor/statement.md) |  | bayashiko | bayashiko | shiro |  |
 | I: The Best Base |  | Hyado | Hyado | tomato | グリッドにする |
 <!-- | J: [トレジャーハンター](./J-Okashi/statement.md) | 50-700-500 | yamad | tsubasa | - | -->
