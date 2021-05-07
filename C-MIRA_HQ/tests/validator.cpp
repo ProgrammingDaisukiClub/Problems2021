@@ -7,9 +7,12 @@ using namespace std;
 void check(){
     int N = inf.readInt(LARGE_MIN_N, LARGE_MAX_N, "N");
     inf.readEoln();
+    int ans=0;
     for (int i = 0; i < N; ++i) {
     if (i != 0) inf.readSpace();
-    inf.readInt(LARGE_MIN_L, LARGE_MAX_L, "L_i");
+    int add=inf.readInt(LARGE_MIN_L, LARGE_MAX_L, "L_i");
+    ans+=add;
+    ensure(ans>=0);
   }
   inf.readEoln();
 }
