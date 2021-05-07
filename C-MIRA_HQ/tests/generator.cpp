@@ -1,5 +1,6 @@
 #include <fstream>
 #include <string>
+#include <algorithm>
 #include "testlib.h"
 #include "constraints.h"
 using namespace std;
@@ -11,11 +12,13 @@ void generate(const string& file_name, int T, int min_N, int max_N, int min_L, i
     for(int t = 0; t < T; t++) {
         int N = rnd.next(min_N, max_N);
         of << N << endl;
-
+        int sum = 0;
         for(int i = 0; i < N; i++) {
-            int L = rnd.next(min_L, max_L);
-            of << L << endl;
+            int L = rnd.next(max(-sum, min_L), max_L);
+            of << L;
+            if(i < N - 1) of << " ";
         }
+        of << endl;
     }
 }
 
