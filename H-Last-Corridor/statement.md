@@ -18,20 +18,20 @@
 
 
 ## Small
-* $T=10$
-* $1\leq N\leq 5$
-* $1\leq H\leq 100$
-* $1\leq X\leq 5$
-* $1\leq A_i\leq 100$
-* $1=D_1\leq D_2\leq \ldots\leq D_X \leq10$
+* $T={{SMALL_T}}$
+* ${{MIN_N}}\leq N\leq {{SMALL_N}}$
+* ${{MIN_H}}\leq H\leq {{SMALL_H}}$
+* ${{MIN_X}}\leq X\leq {{SMALL_X}}$
+* ${{MIN_A}}\leq A_i\leq {{SMALL_A}}$
+* ${{MIN_D}}=D_1\leq D_2\leq \ldots\leq D_X \leq {{SMALL_D}}$
 
 ## Large
-* $T=50$
-* $1\leq N\leq 2000$
-* $1\leq H\leq 10^9$
-* $1\leq X\leq 2000$
-* $1\leq A_i\leq 10^9$
-* $1=D_1\leq D_2\leq \ldots\leq D_X \leq10^9$
+* $T={{MAX_T}}$
+* ${{MIN_N}}\leq N\leq {{MAX_N}}$
+* ${{MIN_H}}\leq H\leq {{MAX_H}}$
+* ${{MIN_X}}\leq X\leq {{MAX_X}}$
+* ${{MIN_A}}\leq A_i\leq {{MAX_A}}$
+* ${{MIN_D}}=D_1\leq D_2\leq \ldots\leq D_X \leq {{MAX_D}}$
 
 
 # 入力
@@ -52,26 +52,8 @@ $D_1 D_2 \ldots D_X$
 # 出力
 各テストケースに対して、答えを1行ずつ出力してください。
 
-# 入力例
-```
-3
-3 10 5
-1 3 5
-1 2 3 4 5
-3 40 3
-3 7 10
-1 4 4
-6 92 23
-12 5 8 4 1 7
-1 1 1 1 2 2 2 2 3 3 3 3 4 5 6 7 8 9 10 100 1000 10000 100000
-```
+{{sample}}
 
-# 出力例
-```
-Yes
-No
-Yes
-```
  $1$ 個目のテストケースでは、例えば $(B_1,B_2,B_3)=(2,1,2)$ などが条件を満たします。実際、  
 * $\displaystyle\sum_{i=1}^{3}B_i=2+1+2=5\leq 5$
 * $\displaystyle\sum_{i=1}^{3}\sum_{j=1}^{B_i}\lfloor A_i/D_j \rfloor=\lfloor1/1\rfloor+\lfloor1/2\rfloor+\lfloor3/1\rfloor+\lfloor5/1\rfloor+\lfloor5/2\rfloor=1+0+3+5+2=11\geq 10$  

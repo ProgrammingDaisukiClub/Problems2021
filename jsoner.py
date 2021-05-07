@@ -56,7 +56,7 @@ def build_define_dict(header_content):
 def smart_str(num):
     # Generate prettified string for integer in statement.
     # e.g. 1000000 -> 10^6, 500000 -> 5 \times 10^5, 10000000000 -> 10^{10}
-    if num < 100000:
+    if num < 10000:
         return str(num)
     match = re.match(r'([^0]+)(0*)', str(num))
     if len(match.group(1)) == 1:
