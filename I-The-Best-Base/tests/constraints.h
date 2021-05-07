@@ -1,3 +1,5 @@
+#define SAMPLE_T 1
+
 #define SMALL_T 10
 #define SMALL_MIN_N 1
 #define SMALL_MAX_N 10

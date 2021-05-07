@@ -89,6 +89,7 @@ void check(bool isSmallTestSet) {
   
   for (int i=0; i<Q; i++) {
     inf.readInt(1, N, "r");
+    inf.readSpace();
     inf.readInt(1, N, "c");
     inf.readEoln();
   }
@@ -97,7 +98,7 @@ void check(bool isSmallTestSet) {
 int main(int argc, char* argv[]) {
   registerValidation(argc, argv);
   int T = inf.readInt(1, LARGE_T, "T");
-  ensuref((T==SMALL_T || T==LARGE_T), "T");
+  ensuref((T==SAMPLE_T || T==SMALL_T || T==LARGE_T), "T");
   inf.readEoln();
   
   bool isSmallTestSet = T==SMALL_T;
