@@ -9,7 +9,7 @@ problem(
   wiki_name="Your pukiwiki page name", # for wikify plugin
   assignees=['Hyado', 'tomato'], # for wikify plugin
   need_custom_judge=True, # for wikify plugin
-  #reference_solution='???',
+  reference_solution='C-tsubasa-AC',
   )
 
 atcoder_config(
