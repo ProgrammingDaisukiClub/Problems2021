@@ -18,15 +18,15 @@ shiro君は部室に誰もいない状態で装置を起動させ、 $N$ 秒間�
 
 ## Small
 
-- $T=10$
-- $1 \leq N \leq 10$
-- $-100 \leq L_i \leq 100$
+- $T={{SMALL_T}}$
+- ${{SMALL_MIN_N}} \leq N \leq {{SMALL_MAX_N}}$
+- ${{SMALL_MIN_L}} \leq L_i \leq {{SMALL_MAX_L}}$
 
 ## Large
 
-- $T=100$
-- $1 \leq N \leq 1000$
-- $-10^5 \leq L_i \leq 10^5$
+- $T={{LARGE_T}}$
+- ${{LARGE_MIN_N}} \leq N \leq {{LARGE_MAX_N}}$
+- ${{LARGE_MIN_L}} \leq L_i \leq {{LARGE_MAX_L}}$
 
 # 入力
 
@@ -46,21 +46,7 @@ $L_1 L_2 \ldots L_N$
 
 各テストケースに対して、答えを1行ずつ出力して下さい。
 
-# 入力例
-
-```
-2
-3
-1 -1 2
-1
-1
-```
-
-# 出力例
-```
-1 0 2
-1
-```
+{{sample}}
 
 入力例は2つのテストケースからなります。
 

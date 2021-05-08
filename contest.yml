@@ -14,12 +14,12 @@ problems:
         score: 10
       - label: Large
         score: 100
-  # - dir_name: C-MIRA_HQ
-  #   data_sets:
-  #     - label: Small
-  #       score: 10
-  #     - label: Large
-  #       score: 100
+  - dir_name: C-MIRA_HQ
+    data_sets:
+      - label: Small
+        score: 10
+      - label: Large
+        score: 100
   - dir_name: D-Highway
     data_sets:
       - label: Small
@@ -50,9 +50,9 @@ problems:
         score: 60
       - label: Large
         score: 650
-  # - dir_name: I-The-Best-Base
-  #   data_sets:
-  #     - label: Small
-  #       score: 60
-  #     - label: Large
-  #       score: 700
+  - dir_name: I-The-Best-Base
+    data_sets:
+      - label: Small
+        score: 60
+      - label: Large
+        score: 700
