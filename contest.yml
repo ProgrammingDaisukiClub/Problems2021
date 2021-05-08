@@ -1,4 +1,6 @@
-contest_name: Waseda Orientation Programming Contest 2021
+contest_name: Waseda Orientation Programming Contest 2021 rehearsal
+# contest_name: Waseda Orientation Programming Contest 2021
+# contest_name: tsubasa test contest
 problems:
   - dir_name: A-A-mul-B
     data_sets:
@@ -6,9 +8,51 @@ problems:
         score: 5
       - label: Large
         score: 5
+  # - dir_name: B-Max-mod-M
+  #   data_sets:
+  #     - label: Small
+  #       score: 10
+  #     - label: Large
+  #       score: 100
+  # - dir_name: C-MIRA_HQ
+  #   data_sets:
+  #     - label: Small
+  #       score: 10
+  #     - label: Large
+  #       score: 100
+  - dir_name: D-Highway
+    data_sets:
+      - label: Small
+        score: 20
+      - label: Large
+        score: 200
   - dir_name: E-Paper-Reading
     data_sets:
       - label: Small
-        score: 5
+        score: 30
       - label: Large
-        score: 5
+        score: 300
+  - dir_name: F-Mohumohumohuhu
+    data_sets:
+      - label: Small
+        score: 30
+      - label: Large
+        score: 300
+  - dir_name: G-Umapyoi
+    data_sets:
+      - label: Small
+        score: 40
+      - label: Large
+        score: 400
+  - dir_name: H-Last-Corridor
+    data_sets:
+      - label: Small
+        score: 60
+      - label: Large
+        score: 650
+  # - dir_name: I-The-Best-Base
+  #   data_sets:
+  #     - label: Small
+  #       score: 60
+  #     - label: Large
+  #       score: 700

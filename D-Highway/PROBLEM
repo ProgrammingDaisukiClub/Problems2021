@@ -7,7 +7,7 @@ problem(
   id=pid,
   title=pid + ": 車の集計",
   wiki_name="-", # for wikify plugin
-  assignees=['kumachan'], # for wikify plugin
+  assignees=['kumachan','Lgeu'], # for wikify plugin
   need_custom_judge=False, # for wikify plugin
   reference_solution='C-kumachan-AC',
   )
