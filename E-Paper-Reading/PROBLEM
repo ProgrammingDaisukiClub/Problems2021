@@ -5,7 +5,7 @@ pid='E'
 problem(
   time_limit=10,
   id=pid,
-  title=pid + ": Paper Reading",
+  title=pid + ": 論文サーベイ",
   wiki_name="-", # for wikify plugin
   assignees=['tsubasa','suzu'], # for wikify plugin
   need_custom_judge=False, # for wikify plugin

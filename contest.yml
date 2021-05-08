@@ -8,12 +8,12 @@ problems:
         score: 5
       - label: Large
         score: 5
-  # - dir_name: B-Max-mod-M
-  #   data_sets:
-  #     - label: Small
-  #       score: 10
-  #     - label: Large
-  #       score: 100
+  - dir_name: B-Max-mod-M
+    data_sets:
+      - label: Small
+        score: 10
+      - label: Large
+        score: 100
   # - dir_name: C-MIRA_HQ
   #   data_sets:
   #     - label: Small
