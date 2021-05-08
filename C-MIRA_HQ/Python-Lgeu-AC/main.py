@@ -2,5 +2,10 @@
 T = int(input())
 for _ in range(T):
     N = int(input())
-    ans = sum(map(int, input().split()))
-    print(ans)
+    L = list(map(int, input().split()))
+    answer = []
+    misw = 0
+    for l in L:
+        misw += l
+        answer.append(misw)
+    print(*answer)
