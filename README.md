@@ -46,7 +46,7 @@ TLは10秒に設定
 | 問題名 | 難易度 | 原案・問題文 | generator | validator | 備考,TODO |
 |---------------------------|--------------|----------------------|-----------|------|---------|
 | A: [AtimesB](./A-A-mul-B/statement.md) | 5-5 | tomato(Answerbook) | - | 昨年と同じ |
-| B: Max mod M |  | Hyado | tomato | tsubasa | 問題文にヒント欄を用意し、%演算を明記する。 |
+| B: [Max mod M](./B-Max-mod-M/statement.md) |  | Hyado | tomato | tsubasa | 問題文にヒント欄を用意し、%演算を明記する。 |
 | C: MIRA HQ |  | shiro | shiro | bayashiko | 最後に総和を出力する問題に変更 |
 | D: [車の集計](./D-Highway/statement.md) |  | kumachan | kumachan | lgeu | 入力は数字で |
 | E: [論文サーベイ](./E-Paper-Reading/statement.md) |  | tsubasa | tsubasa | suzu | 2本読む設定に |
