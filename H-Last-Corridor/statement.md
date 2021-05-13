@@ -42,9 +42,9 @@
 
 
 ```
-$N H X$
-$A_1 A_2 \ldots A_N$
-$D_1 D_2 \ldots D_X$
+$N$ $H$ $X$
+$A_1$ $A_2$ $\ldots$ $A_N$
+$D_1$ $D_2$ $\ldots$ $D_X$
 
 ```
 
