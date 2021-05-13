@@ -74,6 +74,20 @@ public class Main {
 }
 ```
 
+## Python3
+
+```
+def main():
+    T = int(input())
+    for _ in range(T):
+        A, B = map(int, input().split())
+        print(0)  # edit here
+
+
+if __name__ == '__main__':
+    main()
+```
+
 # テストケースのダウンロード方法
 
 1. 本画面の最下部にある提出フォームにおいて、フォーム左上で適切なデータセット(`Small` or `Large`)を選択して、
@@ -127,7 +141,25 @@ public class Main {
     cat in.txt | java Main > out.txt
     ```
 
-## C++ / Python / Ruby / 他
+## Python3
+
+Python3では、プログラムをコンパイルする必要はありません。
+
+1. キーボード入力の代わりに`in.txt`を読み込んで、実行結果を`out.txt`に出力するように、プログラムを実行する
+
+   ※ 実行ファイルと入力ファイルが同一ディレクトリにある必要があります
+
+    コマンドプロンプトなどの場合
+    ```
+    python3 a.py < in.txt > out.txt
+    ```
+    PowerShellの場合
+    ```
+    cat in.txt | python3 a.py > out.txt
+    ```
+
+
+## C++ / Ruby / 他
 
 上記を参考に、自分で調べてください。
 
