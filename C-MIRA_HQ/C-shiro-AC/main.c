@@ -13,9 +13,7 @@ int main(void) {
         for(i = 0; i < N; i++) {
             scanf("%d", &L);
             sum += L;
-            printf("%d", sum);
-            if(i < N - 1) printf(" ");
+            printf("%d\n", sum);
         }
-        printf("\n");
     }
 }
