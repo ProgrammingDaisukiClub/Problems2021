@@ -5,7 +5,7 @@ pid='G'
 problem(
   time_limit=10.0,
   id=pid,
-  title=pid + ": 文字列の問題",
+  title=pid + ": うまぴょい",
   wiki_name="-", # for wikify plugin
   assignees=['Lgeu', 'kumachan'], # for wikify plugin
   need_custom_judge=False, # for wikify plugin
