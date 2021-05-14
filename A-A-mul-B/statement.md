@@ -1,42 +1,39 @@
-# Description
+# 問題文
 
-2つの整数 $A, B$ の積を求めよ。
+2つの整数 $A, B$ の積を求めてください。
 
-# Constraints
+# 制約
 
-* $A, B$ は整数
-* $-5000 \leq A, B \leq 5000$
+## 共通
 
-# Input
-1つの入力ファイルは複数のテストケースからなる。
+- $A, B$ は整数です。
+- ${{ MIN_AB }} \leq A, B \leq {{ MAX_AB }}$
 
-入力ファイルの最初の1行目にはテストケースの個数 $T$ が記される $(1 \leq T \leq 50)$ 。
+## Small
 
-2行目以降には、$T$ 個のテストケースが記述されており、各テストケースは次の形式で表される。
+- $T = {{ MIN_T }}$ 
+
+## Large
+
+- $T = {{ MAX_T }}$
+
+# 入力
+1 つの入力ファイルは複数のテストケースからなります。  
+
+入力ファイルの最初の一行目にはテストケースの個数 $T$ が記されます。  
+
+2行目以降には、$T$ 個のテストケースが記述されており、各テストケースは次の形式で表されます。  
 
 ```
 $A$ $B$
 ```
 
-# Output
-各テストケースに対して、$A \times B$ を1行ずつ出力せよ。
+# 出力
+各テストケースに対して、$A \times B$ を1行ずつ出力してください。
 
-# Sample Input
-```
-3
-1 2
--4 2
--100 100
-```
+{{Sample}}
 
-# Sample Output
-```
-2
--8
--10000
-```
-
-# Sample Programs
+# サンプルプログラム
 
 以下の内容は，Practice Contestの問題 A+B と同等です．理解できている人は読み飛ばして構いません．
 
@@ -75,6 +72,20 @@ public class Main {
         sc.close();
     }
 }
+```
+
+## Python3
+
+```
+def main():
+    T = int(input())
+    for _ in range(T):
+        A, B = map(int, input().split())
+        print(0)  # edit here
+
+
+if __name__ == '__main__':
+    main()
 ```
 
 # テストケースのダウンロード方法
@@ -130,7 +141,25 @@ public class Main {
     cat in.txt | java Main > out.txt
     ```
 
-## C++ / Python / Ruby / 他
+## Python3
+
+Python3では、プログラムをコンパイルする必要はありません。
+
+1. キーボード入力の代わりに`in.txt`を読み込んで、実行結果を`out.txt`に出力するように、プログラムを実行する
+
+   ※ 実行ファイルと入力ファイルが同一ディレクトリにある必要があります
+
+    コマンドプロンプトなどの場合
+    ```
+    python3 a.py < in.txt > out.txt
+    ```
+    PowerShellの場合
+    ```
+    cat in.txt | python3 a.py > out.txt
+    ```
+
+
+## C++ / Ruby / 他
 
 上記を参考に、自分で調べてください。
 

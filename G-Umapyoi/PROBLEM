@@ -1,15 +1,15 @@
 # -*- coding: utf-8; mode: python -*-
 
-pid='E'
+pid='G'
 
 problem(
-  time_limit=1.0,
+  time_limit=10.0,
   id=pid,
-  title=pid + ": Paper Reading",
+  title=pid + ": 文字列の問題",
   wiki_name="-", # for wikify plugin
-  assignees=['tsubasa','suzu'], # for wikify plugin
+  assignees=['Lgeu', 'kumachan'], # for wikify plugin
   need_custom_judge=False, # for wikify plugin
-  #reference_solution='???',
+  reference_solution='C-Lgeu-AC',
   )
 
 atcoder_config(

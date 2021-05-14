@@ -1,0 +1,17 @@
+# -*- coding: utf-8; mode: python -*-
+
+pid='B'
+
+problem(
+  time_limit=1.0,
+  id=pid,
+  title=pid + ": Max mod M",
+  wiki_name= "-", # for wikify plugin
+  assignees= ['Hyado', 'tomato', 'tsubasa'], # for wikify plugin
+  need_custom_judge=False, # for wikify plugin
+  reference_solution='C-toma-AC',
+  )
+
+atcoder_config(
+  task_id=None # None means a spare
+)

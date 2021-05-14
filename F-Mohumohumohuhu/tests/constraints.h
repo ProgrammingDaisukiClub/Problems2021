@@ -1,5 +1,6 @@
 #define MAX_T 1000
+#define MIN_T 10
+#define SAMPLE_T 3
 #define MAX_N 100
-/*
-配列を毎回生成すると領域が足りなくなる可能性が高く，制約に悩んでいます
-*/
+#define SMALL_MAX_N 40
+#define MIN_N 2
