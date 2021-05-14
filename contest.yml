@@ -37,7 +37,7 @@ problems:
       - label: Small
         score: 30
       - label: Large
-        score: 300
+        score: 400
   - dir_name: G-Umapyoi
     data_sets:
       - label: Small

@@ -46,12 +46,12 @@ TLは10秒に設定
 | 問題名 | 難易度 | 原案・問題文 | generator | validator | 備考,TODO |
 |---------------------------|--------------|----------------------|-----------|------|---------|
 | A: [AtimesB](./A-A-mul-B/statement.md) | 5-5 | tomato(Answerbook) | - | 昨年と同じ |
-| B: [Max mod M](./B-Max-mod-M/statement.md) |  | Hyado | tomato | tsubasa | 問題文にヒント欄を用意し、%演算を明記する。 |
-| C: [MIRA HQ](./C-MIRA_HQ/statement.md) |  | shiro | shiro | bayashiko | 最後に総和を出力する問題に変更 |
-| D: [車の集計](./D-Highway/statement.md) |  | kumachan | kumachan | lgeu | 入力は数字で |
-| E: [論文サーベイ](./E-Paper-Reading/statement.md) |  | tsubasa | tsubasa | suzu | 2本読む設定に |
-| F: [mohumohu](./F-Mohumohumohuhu/statement.md) |  | suzu | suzu | tsubasa | (mohu)+のみを許す設定 |
-| G: [うまぴょい](./G-Umapyoi/statement.md) |  | lgeu | lgeu | kumachan |  |
-| H: [さいごのかいろう](./H-Last-Corridor/statement.md) |  | bayashiko | bayashiko | shiro |  |
-| I: [The Best Base](./I-The-Best-Base/statement.md) |  | Hyado | Hyado | tomato | グリッドにする |
+| B: [Max mod M](./B-Max-mod-M/statement.md) | 10-100 | Hyado | tomato | tsubasa | 問題文にヒント欄を用意し、%演算を明記する。 |
+| C: [MIRA HQ](./C-MIRA_HQ/statement.md) | 10-100 | shiro | shiro | bayashiko | 最後に総和を出力する問題に変更 |
+| D: [車の集計](./D-Highway/statement.md) | 20-200 | kumachan | kumachan | lgeu | 入力は数字で |
+| E: [論文サーベイ](./E-Paper-Reading/statement.md) | 30-300 | tsubasa | tsubasa | suzu | 2本読む設定に |
+| F: [mohumohu](./F-Mohumohumohuhu/statement.md) | 30-400 | suzu | suzu | tsubasa | (mohu)+のみを許す設定 |
+| G: [うまぴょい](./G-Umapyoi/statement.md) | 40-400 | lgeu | lgeu | kumachan |  |
+| H: [さいごのかいろう](./H-Last-Corridor/statement.md) | 60-650 | bayashiko | bayashiko | shiro |  |
+| I: [The Best Base](./I-The-Best-Base/statement.md) | 60-700 | Hyado | Hyado | tomato | グリッドにする |
 <!-- | J: [トレジャーハンター](./J-Okashi/statement.md) | 50-700-500 | yamad | tsubasa | - | -->
